@@ -40,8 +40,8 @@ public class EntryServlet extends HttpServlet {
 		String pwd = request.getParameter("password");
 		
 		Register r = new Register();
-        r.setUsername("uname");
-        r.setPassword("pwd");
+        r.setUsername(uname);
+        r.setPassword(pwd);
         
         JdbcCon jd = new JdbcCon();
         i =jd.saveData(r);
